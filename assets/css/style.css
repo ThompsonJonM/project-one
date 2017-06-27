@@ -1,1 +1,45 @@
-/*style goes here*/
+/*Global IDs*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*Individual IDs*/
+
+#backgroundSplash {
+	background-image: url(test successful);
+	background-position: center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+#logContainer {
+	background-color: #B2EBF2;
+	border: 2px solid #9C27B0;
+	padding: 20px;
+}
+
+#locContainer {
+	background-color: #C8E6C9;
+	border: 2px solid #9C27B0;
+	padding: 20px;
+}
+
+#moodContainer {
+	background-color: #FFF9C4;
+	border: 2px solid #9C27B0;
+	padding: 20px;
+}
+
+#audioContainer {
+	background-color: #FFF9C4;
+	height: 50px;
+}
+
+/*Classes*/
+
+.audioTools {
+	margin: 15px 0 0 0;
+}
+
+/*Media Queries*/

@@ -1,107 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Moodsic - Your Source for Mood Based Music</title>
+	<title>Moodsic - Music for Every Mood</title>
 
 	<!-- Reset -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
-	<!-- Primary Styling -->
+	<!-- Compiled and Minified Materialize CSS CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+	<!-- Materialize Local CSS -->
+    <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+
+	<!-- Primary Local Styling -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<!-- Favicon CDN -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<!-- jQuery CDN -->
 	<script src="https://code.jquery.com/jquery-3.2.1.js"
 	  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 	  crossorigin="anonymous"></script>
 
-	<!-- Compiled and minified JavaScript for Materialize -->
+	<!-- Compiled and Minified Materialize JavaScript CDN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
 
-	<!-- JavaScript -->
+	<!-- Materialize Local JavaScript -->
+	<script type="text/javascript" src="materialize/js/materialize.js"></script>
+
+	<!-- Local JavaScript -->
 	<script type="text/javascript" src="./assets/javascript/logic.js"></script>
 
-	<!-- Viewport -->
+	<!-- Mobile Viewport for Queries -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 
-	<!-- nav block -->
-	<nav class="navbar navbar-default">
-		<div class="container">
+	<section id="backgroundSplash">
+
+		<!-- Navigation Block w' Placeholder Logo -->
+		<nav class="navbar navbar-default">
+			<div class="nav-wrapper">
+				<div class="row">
+					<div class="col s2 push-s1 m2 push-m1 l2 push-l1 xl2 push-xl1">
+						<a class="navbar-brand" href="https://github.com/ThompsonJonM/project-one" target="_blank">
+							<img class="responsive-img" src="./assets/images/logo.png">
+						</a>
+					</div>
+
+					<div class="col s6 push-s6 m6 push-m6 l6 push-l6 xl6 push-xl6">
+						<ul>
+							<li><a href="weather.html">Thinking Out Loud Weather</a></li>
+							<li><a href="mood.html">Mood Adjustment</a></li>
+							<li><a href="playlist.html">Playlists</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- header block -->
+		<header>
+			<div class="page-header">
+				<h1>MOODSIC</h1>
+			</div>
+		</header>
+
+		<!-- Login Block -->
+		<div class="container" id="logContainer">
 			<div class="row">
-				<div class="col s2 m2 l2 xl2">
-					<a class="navbar-brand" href="https://github.com/ThompsonJonM/project-one" target="_blank">
-						<img class="responsive-img" src="./assets/images/logo.png">
-					</a>
-				</div>
-
-				<div class="col s8 push-s8 m8 push-m8 l8 push-l8 xl8 push-xl8">
-					<h4>test</h4>
+				<div class="col s12 m12 l12 xl12 loginDiv">
+					<h5>For Placement Only</h5>
+					<h4>Hide Container Upon Submit</h4>
+					<a class="waves-effect waves-light btn" id="logSubmit">Submit</a>
 				</div>
 			</div>
 		</div>
-	</nav>
 
-	<!-- header block -->
-	<header>
-		<div class="page-header">
-			<h1>MOODSIC</h1>
-		</div>
-	</header>
+		<br>
+		<br>
 
-	<!-- login block -->
-	<div class="container loginContainer">
-		<div class="row">
-			<div class="col s10 m10 l10 xl10 loginDiv">
-				Log In Div
-			</div>
-		</div>
-	</div>
-
-	<!-- playlist block -->
-	<div class="container">
-
-		<!-- row one -->
-		<div class="row">
-			<div class="col s4 m4 l4 xl4">
-				<img class="responsive-img" src="./assets/images/album.jpg">
-			</div>
-
-			<div class="col s4 m4 l4 xl4">
-				<img class="responsive-img" src="./assets/images/album.jpg">
-			</div>
-
-			<div class="col s4 m4 l4 xl4">
-				<img class="responsive-img" src="./assets/images/album.jpg">
+		<!-- Location Block -->
+		<div class="container" id="locContainer">
+			<div class="row">
+				<div class="col s12 m12 l12 xl12 loginDiv">
+					<h5>For Placement Only</h5>
+					<h4>Hide Container Upon Submit</h4>
+					<a class="waves-effect waves-light btn" id="locSubmit">Submit</a>
+				</div>
 			</div>
 		</div>
 
-		<!-- row two -->
-		<div class="row">
-			<div class="col s4 m4 l4 xl4">
-				<img class="responsive-img" src="./assets/images/album.jpg">
-			</div>
+		<br>
+		<br>
 
-			<div class="col s4 m4 l4 xl4">
-				<img class="responsive-img" src="./assets/images/album.jpg">
-			</div>
-
-			<div class="col s4 m4 l4 xl4">
-				<img class="responsive-img" src="./assets/images/album.jpg">
+		<!-- Mood Block -->
+		<div class="container" id="moodContainer">
+			<div class="row">
+				<div class="col s12 m12 l12 xl12 loginDiv">
+					<h5>For Placement Only</h5>
+					<h4>Hide Container Upon Submit</h4>
+					<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">mood_bad</i></a>
+			        <a class="btn-floating btn-large waves-effect waves-light brown"><i class="material-icons">sentiment_very_dissatisfied</i></a>
+			        <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">sentiment_dissatisfied</i></a>
+			        <a class="btn-floating btn-large waves-effect waves-light yellow"><i class="material-icons">sentiment_neutral</i></a>
+			        <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">sentiment_satisfied</i></a>
+			        <a class="btn-floating btn-large waves-effect waves-light purple"><i class="material-icons">sentiment_very_satisfied</i></a>
+					<br>
+					<br>
+					<a class="waves-effect waves-light btn" id="moodSubmit">Submit</a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<!-- footer block -->
-	<footer>
-		<div class="page-footer">
-			<a href="https://github.com/ThompsonJonM/project-one" target="_blank">© Copyright 2017 MOODSIC</a>
+		<br>
+		<br>
+
+		<!-- Playlist Block -->
+		<div class="container" id="playlistContainer">
+			<div class="row">
+				<div class="col s4 m4 l4 xl4">
+					<img class="responsive-img" src="./assets/images/album.jpg">
+				</div>
+
+				<div class="col s4 m4 l4 xl4">
+					<img class="responsive-img" src="./assets/images/album.jpg">
+				</div>
+
+				<div class="col s4 m4 l4 xl4">
+					<img class="responsive-img" src="./assets/images/album.jpg">
+				</div>
+			</div>
 		</div>
-	</footer>
+
+			<br>
+
+		<!-- Audio Player Block -->
+		<div class="container" id="audioContainer">
+			<div class="row center-align">
+				<div class="col s12 m12 l12 xl12 audioTools">
+					<i class="material-icons md-48" id="skipPrevInput">skip_previous</i>
+		            <i class="material-icons md-48" id="playInput">play_arrow</i>
+		            <i class="material-icons md-48" id="pauseInput">pause</i>
+		            <i class="material-icons md-48" id="stopInput">stop</i>
+		            <i class="material-icons md-48" id="skipNextInput">skip_next</i>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!-- footer block -->
+		<footer>
+			<div class="page-footer center-align">
+				<a href="https://github.com/ThompsonJonM/project-one" target="_blank">2017 MOODSIC</a>
+			</div>
+		</footer>
+
+	</section>
 
 </body>
 </html>
