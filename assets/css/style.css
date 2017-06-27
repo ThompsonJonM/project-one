@@ -4,12 +4,20 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #a4a4a4;
+}
+
+header {
+	
+}
+
 /*Individual IDs*/
 
 #backgroundSplash {
 	background-image: url(test successful);
 	background-position: center;
-	background-size: 100% 100%;
+	background-size: 85% 150%;
 	background-repeat: no-repeat;
 }
 
