@@ -4,16 +4,21 @@
 	box-sizing: border-box;
 }
 
+body {
+	background-color: #a4a4a4;
+}
+
+
 /*Individual IDs*/
 
 #backgroundSplash {
 	background-image: url(test successful);
 	background-position: center;
-	background-size: 100% 100%;
+	background-size: 85% 150%;
 	background-repeat: no-repeat;
 }
 
-#logContainer {
+#logContainer, #moodContainer {
 	background-color: #B2EBF2;
 	border: 2px solid #9C27B0;
 	padding: 20px;
@@ -31,15 +36,24 @@
 	padding: 20px;
 }
 
+#playlistImgOne, #playlistImgTwo, #playlistImgThree {
+	box-shadow: 0 0 2px 2px;
+}
+
+#playlistImgOne:hover, #playlistImgTwo:hover, #playlistImgThree:hover {
+	box-shadow: 0 0 5px 5px;
+}
+
 #audioContainer {
 	background-color: #FFF9C4;
 	height: 50px;
+	border: 2px solid #9C27B0;
 }
 
 /*Classes*/
 
 .audioTools {
-	margin: 15px 0 0 0;
+	margin: 12.5px 0 0 0;
 }
 
 /*Media Queries*/
