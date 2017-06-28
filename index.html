@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Sara Heymann,Cory Miljour, Helen Smith, Jonathan Thompson">
 
+	<!-- ajax CDN -->
+	<script 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
 	<!-- Reset -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
@@ -41,13 +45,15 @@
 	<script type="text/javascript" src="materialize/js/materialize.js"></script>
 
 	<!-- Local JavaScript -->
-	<script type="text/javascript" src="./assets/javascript/logic.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 
 	<!-- Mobile Viewport for Queries -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- DZ CDN -->
+	<script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
 
 </head>
-<body>
+<body id="body">
 
 	<section id="backgroundSplash">
 
@@ -64,6 +70,7 @@
 					<div class="col s6 push-s4 m6 push-m4 l6 push-l6 xl3 push-xl7">
 						<ul>
 							<li><a href="weather.html">Thinking Out Loud Weather</a></li>
+							<li id="locationInfo"></li>
 							<li><a href="mood.html">Mood Adjustment</a></li>
 							<li><a href="playlist.html">Playlists</a></li>
 						</ul>
