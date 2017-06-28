@@ -16,27 +16,27 @@ function weatherBackgroundChange() {
           document.getElementById("body").style.backgroundImage = 'url("http://img02.deviantart.net/d2c2/i/2005/028/b/6/clear_day_by_juanchis.jpg")';
           break;
         case "clear-night":
-          DZ.player.playPlaylist(2235506522);
+          document.getElementById("body").style.backgroundImage = 'url("https://tcklusman.files.wordpress.com/2014/05/tumblr_static_dark-starry-night-sky-226736.jpg")';
            
           break;
         case "rain":
-          DZ.player.playPlaylist(2096299244);
+          document.getElementById("body").style.backgroundImage = 'url("http://wearechange.org/wp-content/uploads/2015/03/1_See_It.jpg")';
         
           break;
         case "cloudy":
-          DZ.player.playPlaylist(2096299244);
+          document.getElementById("body").style.backgroundImage = 'url("http://www.tripwire.com/state-of-security/wp-content/uploads/cache//shutterstock_106367810/4261234929.jpg")';
           
           break;
         case "partly-cloudy-day":
-          DZ.player.playPlaylist(2096299244);
+          document.getElementById("body").style.backgroundImage = 'url("http://www.sturdyforcommonthings.com/wp-content/uploads/2013/03/wind_blowing.jpg")';
           
           break;
         case "partly-cloudy-night":
-          DZ.player.playPlaylist(2247598026);
+          document.getElementById("body").style.backgroundImage = 'url("http://scienceblogs.com/startswithabang/files/2013/04/night-sky-stars.jpeg")';
            
           break;
         case "snow":
-          DZ.player.playPlaylist(2096299244);
+          document.getElementById("body").style.backgroundImage = 'url("http://www.vancitybuzz.com/wp-content/uploads/2015/12/shutterstock_315123593-984x500.jpg")';
             
           break;
         default:
@@ -62,18 +62,11 @@ $.ajax({
     }
 });
 
-function httpsLocation() {
-    if (navigator.geolocation) {
-      var corysVar;
-      navigator.geolocation.getCurrentPosition(passLocation);
-    }
-  }
-
 DZ.init({
     appId  : '240622',
     channelUrl : 'https://cmiljour.github.io/Deezer/index.html',
     player: {
-            container: 'deezerWidget',
+    container: 'deezerWidget',
     width : 800,
     height : 300,
     playlist: true,
