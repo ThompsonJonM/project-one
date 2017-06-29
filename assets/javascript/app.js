@@ -59,13 +59,14 @@ $.ajax({
         latitude = location.latitude;
         longitude = location.longitude;
         coordinates = latitude + ", " + longitude;
-        $("#locationInfo").text(location.city + ", " + location.state);
+        $("#location").text(location.city + ", " + location.state);
     },
     complete: function(location){
         getWeather();
     },
     error: function() {
-      httpsLocation();
+      // 
+      console.log("blahblahblah");
     }
 });
 
@@ -81,7 +82,7 @@ DZ.init({
 }
 });
 $("#dezSubmit").on("click", function(){
-  // console.log("hi");
+  console.log("hi");
     DZ.login(function(response) {
     if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
