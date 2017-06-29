@@ -33,8 +33,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-
-
 <body>
     <nav class="purple" role="navigation">
         <div class="nav-wrapper container">
@@ -45,12 +43,21 @@
                 <li><a id="location" style="color: white">Location </a></li>
                 <li><a href="#" style="color: white">Playlists</a></li>
             </ul>
-            <ul id="nav-mobile" class="side-nav">
+      
+            <a id="logo-container" href="#" class="brand-logo">Moodsic</a>
+      
+            <ul class="right hide-on-med-and-down">
                 <li><a href="#">Mood Adjustment</a></li>
                 <li><a id="weather">Weather </a></li>
                 <li><a id="location">Location </a></li>
                 <li><a href="#">Playlists</a></li>
             </ul>
+      
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="#">Mood Adjustment</a></li>
+                <li><a id="weather">Weather </a></li>
+                <li><a id="location">Location </a></li>
+                <li><a href="#">Playlists</a></li>
             </ul>
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
@@ -70,6 +77,7 @@
                     <h5>Enter Your Deezer ID</h5>
                     <h5>If no Deezer ID, prompt to create one</h5>
                     <a class="waves-effect waves-light btn green" id="logSubmit">Submit</a>
+                    <a class="waves-effect waves-light btn" id="logSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -88,6 +96,7 @@
                     <h4>Can we use your location? 2/3</h4>
                     <h5>Simple Yes/No (break on no)</h5>
                     <a class="waves-effect waves-light btn green" id="locSubmit">Submit</a>
+                    <a class="waves-effect waves-light btn" id="locSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -114,6 +123,15 @@
                     <br>
                     <br>
                     <a class="waves-effect waves-light btn green" id="moodSubmit">Submit</a>
+                    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">mood_bad</i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light brown"><i class="material-icons">sentiment_very_dissatisfied</i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">sentiment_dissatisfied</i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light yellow"><i class="material-icons">sentiment_neutral</i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">sentiment_satisfied</i></a>
+                    <a class="btn-floating btn-large waves-effect waves-light purple"><i class="material-icons">sentiment_very_satisfied</i></a>
+                    <br>
+                    <br>
+                    <a class="waves-effect waves-light btn" id="moodSubmit">Submit</a>
                 </div>
             </div>
         </div>
@@ -150,6 +168,11 @@
                         <i class="material-icons" style="font-size: 60px" id="pauseInput">pause</i>
                         <i class="material-icons" style="font-size: 60px" id="stopInput">stop</i>
                         <i class="material-icons" style="font-size: 60px" id="skipNextInput">skip_next</i>
+                        <i class="material-icons md-48" id="skipPrevInput">skip_previous</i>
+                        <i class="material-icons md-48" id="playInput">play_arrow</i>
+                        <i class="material-icons md-48" id="pauseInput">pause</i>
+                        <i class="material-icons md-48" id="stopInput">stop</i>
+                        <i class="material-icons md-48" id="skipNextInput">skip_next</i>
                     </div>
                 </div>
             </div>
@@ -165,6 +188,7 @@
     <footer class="page-footer purple">
         <div class="container center-align">
             <a href="https://github.com/ThompsonJonM/project-one"  style="color: white" target="_blank">2017 MOODSIC</a>
+            <a href="https://github.com/ThompsonJonM/project-one" target="_blank">2017 MOODSIC</a>
         </div>
         </div>
     </footer>
