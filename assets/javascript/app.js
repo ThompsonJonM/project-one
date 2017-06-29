@@ -80,7 +80,8 @@ DZ.init({
     onload : function(){}
 }
 });
-$("#logSubmit").on("click", function(){
+$("#dezSubmit").on("click", function(){
+  // console.log("hi");
     DZ.login(function(response) {
     if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
