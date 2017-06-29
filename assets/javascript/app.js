@@ -3,7 +3,9 @@ var coordinates;
 var weatherIcon;
 var latitude;
 var longitude;
+var badMoodArray = [];
 var boredArray = [];
+badMoodArray.push(2000587262, 1901477262, 52827441);
 boredArray.push(1887039106, 2235506522, 1990962322);
 
 
@@ -94,9 +96,16 @@ $("#dezSubmit").on("click", function(){
     }
     }, {perms: 'basic_access,email, offline_access, manage_library_, manage_community, delete_library, listening_history'});
 });
+$("#badMoodButton").on("click", function(){
+        var badMoodPlaylist = badMoodArray[Math.floor(Math.random() * badMoodArray.length)];
+      
+        DZ.player.playPlaylist(badMoodPlaylist);
+        
+        });
 $("#boredButton").on("click", function(){
         var boredPlaylist = boredArray[Math.floor(Math.random() * boredArray.length)];
       
         DZ.player.playPlaylist(boredPlaylist);
         
         });
+
