@@ -4,10 +4,22 @@
 	box-sizing: border-box;
 }
 
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
 body {
 	background-color: #a4a4a4;
 }
 
+footer.page-footer {
+  margin: 0;
+}
 
 /*Individual IDs*/
 
@@ -52,8 +64,58 @@ body {
 
 /*Classes*/
 
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
 .audioTools {
 	margin: 12.5px 0 0 0;
 }
 
+.btn-floating.btn-large {
+  width: 80px;
+  height: 80px;
+}
+
+.btn-floating.btn-large.halfway-fab {
+  bottom: -28px;
+}
+
+.btn-floating.btn-large i {
+  line-height: 80px;
+}
+
 /*Media Queries*/
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
