@@ -1,11 +1,16 @@
 // JS goes here
-var corysVar;
+var coordinates;
 var weatherIcon;
 var latitude;
 var longitude;
+var boredArray = [];
+boredArray.push(1887039106, 2235506522, 1990962322);
+
+
+
 function getWeather(){
     var url = "https://api.forecast.io/forecast/2b4b9e2d0c9c7ba61f588616d2967c9c/";
-    $.getJSON(url + corysVar + "?callback=?", function(data){
+    $.getJSON(url + coordinates + "?callback=?", function(data){
         weatherIcon = data.currently.icon;
         weatherBackgroundChange();
     });
@@ -37,8 +42,10 @@ function weatherBackgroundChange() {
           break;
         case "snow":
           document.getElementById("body").style.backgroundImage = 'url("http://www.vancitybuzz.com/wp-content/uploads/2015/12/shutterstock_315123593-984x500.jpg")';
-            
+        
           break;
+        case "wind":
+          $("#body").html();
         default:
           break;
       }
@@ -51,7 +58,7 @@ $.ajax({
         
         latitude = location.latitude;
         longitude = location.longitude;
-        corysVar = latitude + ", " + longitude;
+        coordinates = latitude + ", " + longitude;
         $("#locationInfo").text(location.city + ", " + location.state);
     },
     complete: function(location){
@@ -63,8 +70,8 @@ $.ajax({
 });
 
 DZ.init({
-    appId  : '240622',
-    channelUrl : 'https://cmiljour.github.io/Deezer/index.html',
+    appId  : '240762',
+    channelUrl : 'https://thompsonjonm.github.io/project-one/',
     player: {
     container: 'deezerWidget',
     width : 800,
@@ -73,7 +80,7 @@ DZ.init({
     onload : function(){}
 }
 });
-$("#deezerLogin").on("click", function(){
+$("#logSubmit").on("click", function(){
     DZ.login(function(response) {
     if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
@@ -86,6 +93,8 @@ $("#deezerLogin").on("click", function(){
     }, {perms: 'basic_access,email, offline_access, manage_library_, manage_community, delete_library, listening_history'});
 });
 $("#boredButton").on("click", function(){
-        DZ.player.playPlaylist(2096299244);
+        var boredPlaylist = boredArray[Math.floor(Math.random() * boredArray.length)];
+      
+        DZ.player.playPlaylist(boredPlaylist);
         
         });
