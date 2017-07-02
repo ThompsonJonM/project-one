@@ -14,7 +14,7 @@ p {
 }
 
 body {
-	background-color: #B2EBF2;
+	background-color: #e1f5fe;
 }
 
 footer.page-footer {
@@ -35,7 +35,7 @@ footer.page-footer {
 }
 
 #dezContainer, #moodContainer, #locContainer {
-	background-color: #B2EBF2;
+	background-color: #e8f5e9;
 }
 
 #playlistImgOne, #playlistImgTwo, #playlistImgThree {
@@ -80,16 +80,17 @@ footer.page-footer {
 }
 
 .btn-floating.btn-large {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
 }
 
 .btn-floating.btn-large.halfway-fab {
   bottom: -28px;
 }
-
-.btn-floating.btn-large i {
-  line-height: 80px;
+/*mood button class*/
+.emo {
+ 
+  height: 100%;
 }
 
 /*Media Queries*/
