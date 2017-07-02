@@ -1,17 +1,24 @@
 // JS goes here
+
+var THE_KEY;  
 var coordinates;
 var weatherIcon;
 var latitude;
 var longitude;
+var database = firebase.database();
+var url;
 var badMoodArray = [];
 var boredArray = [];
 badMoodArray.push(2000587262, 1901477262, 52827441);
 boredArray.push(1887039106, 2235506522, 1990962322);
 
-
+database.ref().once('value', function (snap){
+    THE_KEY = snap.val().MY_KEY;
+});
 
 function getWeather(){
-    var url = "https://api.forecast.io/forecast/2b4b9e2d0c9c7ba61f588616d2967c9c/";
+  console.log("hi");
+    var url = "https://api.forecast.io/forecast/" + THE_KEY + "/";
     $.getJSON(url + coordinates + "?callback=?", function(data){
         weatherIcon = data.currently.icon;
         weatherBackgroundChange();
@@ -63,9 +70,6 @@ $.ajax({
         coordinates = latitude + ", " + longitude;
         $("#location").text(location.city + ", " + location.state);
     },
-    complete: function(location){
-        getWeather();
-    },
     error: function() {
       // 
       console.log("blahblahblah");
@@ -84,7 +88,7 @@ DZ.init({
 }
 });
 $("#dezSubmit").on("click", function(){
-  console.log("hi");
+  console.log("hi there");
     DZ.login(function(response) {
     if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
@@ -100,7 +104,7 @@ $("#badMoodButton").on("click", function(){
         var badMoodPlaylist = badMoodArray[Math.floor(Math.random() * badMoodArray.length)];
       
         DZ.player.playPlaylist(badMoodPlaylist);
-        
+        getWeather();
         });
 $("#boredButton").on("click", function(){
         var boredPlaylist = boredArray[Math.floor(Math.random() * boredArray.length)];
