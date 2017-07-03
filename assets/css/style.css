@@ -14,11 +14,7 @@ p {
 }
 
 body {
-<<<<<<< HEAD
-	background-color: #e1f5fe;
-=======
 	background-color: #e0f2f1;
->>>>>>> origin/feature/remove_duplicates_index.html
 }
 
 footer.page-footer {
@@ -40,14 +36,9 @@ footer.page-footer {
 }
 */
 
-<<<<<<< HEAD
-#dezContainer, #moodContainer, #locContainer {
-	background-color: #e8f5e9;
-=======
 /*#dezContainer, #moodContainer, #locContainer {
 	background-color: #e0f2f1;
   min-height: 250px;
->>>>>>> origin/feature/remove_duplicates_index.html
 }
 
 #playlistImgOne, #playlistImgTwo, #playlistImgThree {
@@ -110,10 +101,9 @@ footer.page-footer {
 .btn-floating.btn-large.halfway-fab {
   bottom: -28px;
 }
-/*mood button class*/
-.emo {
- 
-  height: 100%;
+
+.btn-floating.btn-large i {
+  line-height: 90px;
 }
 
 /*Media Queries*/
