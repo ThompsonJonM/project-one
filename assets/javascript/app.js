@@ -27,7 +27,7 @@ function getWeather(){
 function weatherBackgroundChange() {
       switch (weatherIcon) {
         case "clear-day":
-          document.getElementById("body").style.backgroundImage = 'url("http://img02.deviantart.net/d2c2/i/2005/028/b/6/clear_day_by_juanchis.jpg")';
+          document.getElementById("body").style.backgroundImage = 'url("https://catfinearts.com/weather_images/AdobeStock_159516749_Preview.jpeg")';
           break;
         case "clear-night":
           document.getElementById("body").style.backgroundImage = 'url("https://tcklusman.files.wordpress.com/2014/05/tumblr_static_dark-starry-night-sky-226736.jpg")';
@@ -68,7 +68,7 @@ $.ajax({
         latitude = location.latitude;
         longitude = location.longitude;
         coordinates = latitude + ", " + longitude;
-        $("#location").text(location.city + ", " + location.state);
+        $(".location").text(location.city + ", " + location.state);
     },
     error: function() {
       // 
