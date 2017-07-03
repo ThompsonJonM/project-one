@@ -45,19 +45,16 @@
 
 </head>
 
-<body id="body">
+<body>
 
     <nav class="purple" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo" style="color: white">Moodsic</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#" style="color: white">Mood Adjustment</a></li>
-                <li><a id="weather" style="color: white">Weather </a></li>
-                <li><a id="location" style="color: white">Location </a></li>
-                <li><a href="#" style="color: white">Playlists</a></li>
-            </ul>
-      
             <a id="logo-container" href="#" class="brand-logo">Moodsic</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Mood Adjustment</a></li>
+                <li><a id="location">Location </a></li>
+                <li><a href="#">Playlists</a></li>
+            </ul>
       
             <ul id="nav-mobile" class="side-nav">
                 <li><a href="#">Mood Adjustment</a></li>
@@ -74,7 +71,7 @@
             <div class="container">
             </div>
         </div>
-        <div class="parallax"><img src="assets/images/background1.png" class="responsive-img" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="assets/images/background1.png" alt="Unsplashed background img 1"></div>
     </div>
 
     <div class="container" id="dezContainer">
@@ -99,7 +96,7 @@
             <div class="container">
             </div>
         </div>
-        <div class="parallax"><img src="assets/images/background2.png" class="responsive-img" alt="Unsplashed background img 2"></div>
+        <div class="parallax"><img src="assets/images/background2.png" alt="Unsplashed background img 2"></div>
     </div>
 
     <div class="container" id="locContainer">
@@ -123,7 +120,7 @@
             </div>
         </div>
 
-        <div class="parallax"><img src="assets/images/background3.png" class="responsive-img" alt="Unsplashed background img 3"></div>
+        <div class="parallax"><img src="assets/images/background3.png" alt="Unsplashed background img 3"></div>
 
     </div>
 
@@ -131,14 +128,18 @@
         <div class="section">
             <div class="row">
                 <div class="col s10 m10 l10 xl10">
-                    <h4>What is your mood? 3/3</h4>
-                    <h5>Select a single mood and then move on to playlist</h5>
-                    <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons" id= "badMoodButton" style="font-size: 60px">mood_bad</i></a>
-                    <a class="btn-floating btn-large waves-effect waves-light brown"><i class="material-icons" style="font-size: 60px">sentiment_very_dissatisfied</i></a>
-                    <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons" style="font-size: 60px">sentiment_dissatisfied</i></a>
-                    <a class="btn-floating btn-large waves-effect waves-light amber"><i class="material-icons" id="boredButton"style="font-size: 60px">sentiment_neutral</i></a>
-                    <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons" style="font-size: 60px">sentiment_satisfied</i></a>
-                    <a class="btn-floating btn-large waves-effect waves-light purple"><i class="material-icons" style="font-size: 60px">sentiment_very_satisfied</i></a>
+                    <h4>What mood would you like to be in?</h4>
+                    <bk/>
+                    <button class="btn-floating btn-large waves-effect waves-light red accent-4" id="badMoodButton"><img class="emo" src="assets/images/emo_mad.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light blue-grey darken-4" id=""><img class="emo" src="assets/images/emo_devil.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light brown darken-4" id="boredButton"><img class="emo" src="assets/images/emo_meh.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light green darken-4" id=""><img class="emo" src="assets/images/emo_sleep.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light pink darken-3" id=""><img class="emo" src="assets/images/emo_romantic.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light blue darken-4" id=""><img class="emo" src="assets/images/emo_sunglasses_smiley.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_happy2_bk.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_not_happy_bk.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_mad_bk.svg"></button>
+                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_heart_bk.svg"></button>
                 </div>
 
                     <br>
@@ -151,33 +152,24 @@
         </div>
     </div>
 
-    <div class="parallax-container valign-wrapper">
+   <!-- <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
             </div>
         </div>
 
-        <div class="parallax"><img src="assets/images/background6.png" class="responsive-img" alt="Unsplashed background img 6"></div>
+        <div class="parallax"><img src="assets/images/background4.png" alt="Unsplashed background img 6"></div>
 
-    </div>
+    </div>-->
 
-    <div class="container">
-        <div class="section">
+    <div class="container" id="body">
             <div class="container" id="playlistContainer">
                 <div class="row">
-                    <div class="col s4 m4 l4 xl4">
-                        <img class="responsive-img" src="assets/images/album.png" id="playlistImgOne">
-                    </div>
-
-                    <div class="col s4 m4 l4 xl4">
-                        <img class="responsive-img" src="assets/images/album2.png" id="playlistImgTwo">
-                    </div>
-
-                    <div class="col s4 m4 l4 xl4">
-                        <img class="responsive-img" src="assets/images/album3.png" id="playlistImgThree">
-                    </div>
+                    <div class="col s4 m4 l4 xl4"  id="body" >
+                      <br>
+                        <br>
                     <div id="deezerWidget"></div>
-                </div>
+              
             </div>
 
             <br>
@@ -195,7 +187,8 @@
                 </div>
             </div> -->
 
-        </div>
+                </div>
+                </div>
     </div>
 
     <div class="parallax-container valign-wrapper">
@@ -204,14 +197,13 @@
             </div>
         </div>
 
-        <div class="parallax"><img src="assets/images/background1.png" class="responsive-img" alt="Unsplashed background img 1"></div>
+        <div class="parallax"><img src="assets/images/background5.png" alt="Unsplashed background img 1"></div>
 
     </div>
 
     <footer class="page-footer purple">
         <div class="container center-align">
-            <a href="https://github.com/ThompsonJonM/project-one"  style="color: white" target="_blank">2017 MOODSIC</a>
-            <a href="https://github.com/ThompsonJonM/project-one" target="_blank">2017 MOODSIC</a>
+            <a href="https://github.com/ThompsonJonM/project-one" target="_blank" class="brand-logo">2017 Moodsic</a>
         </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>

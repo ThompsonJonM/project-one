@@ -6,7 +6,7 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: white;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
 }
 
 body {
-	background-color: #B2EBF2;
+	background-color: #e0f2f1;
 }
 
 footer.page-footer {
@@ -22,20 +22,23 @@ footer.page-footer {
 }
 
 /*Individual IDs*/
-
-#logo-container {
+/*#logo-container {
 	color: white;
 }
+*/
 
+/*
 #backgroundSplash {
 	background-image: url(test successful);
 	background-position: center;
 	background-size: 85% 150%;
 	background-repeat: no-repeat;
 }
+*/
 
-#dezContainer, #moodContainer, #locContainer {
-	background-color: #B2EBF2;
+/*#dezContainer, #moodContainer, #locContainer {
+	background-color: #e0f2f1;
+  min-height: 250px;
 }
 
 #playlistImgOne, #playlistImgTwo, #playlistImgThree {
@@ -45,17 +48,21 @@ footer.page-footer {
 #playlistImgOne:hover, #playlistImgTwo:hover, #playlistImgThree:hover {
 	box-shadow: 0 0 5px 5px;
 }
-
-#audioContainer {
+*/
+/*#audioContainer {
 	background-color: #FFF9C4;
 	height: 50px;
 	border: 2px solid #9C27B0;
 }
-
+*/
 /*Classes*/
 
+.brand-logo {
+  color: white;
+}
+
 .button-collapse {
-  color: #26a69a;
+  color: white;
 }
 
 .parallax-container {
@@ -64,8 +71,9 @@ footer.page-footer {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
+
+.parallax-container .section {
+  width: 100%;
   }
 
 .icon-block {
@@ -75,9 +83,15 @@ footer.page-footer {
   font-size: inherit;
 }
 
+.container #body {
+  min-height: 500px;
+  padding-top: 50px;
+}
+/*
 .audioTools {
 	margin: 12.5px 0 0 0;
 }
+*/
 
 .btn-floating.btn-large {
   width: 80px;
