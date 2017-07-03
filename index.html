@@ -66,8 +66,8 @@
         </div>
     </nav>-->
 
-    <div id="index-banner" class="parallax-container">
-        <div class="section no-pad-bot">
+    <div id="index-banner">
+        <div class="section no-pad-bot  grey darken-2">
             <div class="container">
                         <br><br>
                 <div class="row">
@@ -84,24 +84,24 @@
                     </div>
                 </div>
             </div>
-     <div class="parallax"><img src="assets/images/background1.png" alt="Unsplashed background img 1"></div>
-     </div>
     </div>
 
     <div class="container" id="locContainer">
         <div class="section">
             <div class="row center">
                 <div id="dz-root"></div>
-                <h4 class="location">Location </h4>
+                <h4>You're in <span class="location"></span> </h4>
+               
             </div>
-            <div class="row">
-                <div class="col s10 m10 l10 xl10">
-                    <h4>Can we use your location? 2/3</h4>
-                    <h5>Simple Yes/No (break on no)</h5>
-                </div>
+            <div class="row center">
 
-                <div class="col s2 m2 l2 xl2">
-                    <a class="waves-effect waves-light btn green" id="locSubmit">Submit</a>
+            <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><h5>What is Moodsic</h5></div>
+      <div class="collapsible-body left"><blockquote>Studies show that the weather has an overwhelming effect on your mood, Moodsic puts it back into your hands by giving you the choice of what mood you want to be in, and selecting curated playlists to get you there.  Our website is AA accessible so we all have the option to control our mood.</blockquote></div>
+</li>
+</ul>
+                    
                 </div>
             </div>
         </div>
@@ -113,49 +113,36 @@
             </div>
         </div>
 
-        <div class="parallax"><img src="assets/images/background3.png" alt="Unsplashed background img 3"></div>
+        <div class="parallax" id="body"></div>
 
+ 
+</div>
     </div>
 
-    <div class="container" id="moodContainer">
-        <div class="section">
-            <div class="row">
-                <div class="col s10 m10 l10 xl10">
-                    <h4>What mood would you like to be in?</h4>
-                    <bk/>
-                    <button class="btn-floating btn-large waves-effect waves-light red accent-4" id="badMoodButton"><img class="emo" src="assets/images/emo_mad.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light blue-grey darken-4" id=""><img class="emo" src="assets/images/emo_devil.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light brown darken-4" id="boredButton"><img class="emo" src="assets/images/emo_meh.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light green darken-4" id=""><img class="emo" src="assets/images/emo_sleep.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light pink darken-3" id=""><img class="emo" src="assets/images/emo_romantic.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light blue darken-4" id=""><img class="emo" src="assets/images/emo_sunglasses_smiley.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_happy2_bk.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_not_happy_bk.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_mad_bk.svg"></button>
-                    <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_heart_bk.svg"></button>
-                </div>
-
+        <div class="container" id="moodContainer">
+            <div class="section">
+                <div class="row center">
+                    <div class="col s12 m12 l12 xl12">
+                        <h4>What mood would you like to be in?</h4>
+                        <bk/>
+                        <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id="badMoodButton"><img class="emo" src="assets/images/emo_devil.svg"></button>
+                        <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_unhappy.svg"></button>
+                        <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id="boredButton"><img class="emo" src="assets/images/emo_blank.svg"></button>
+                        <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_sleep.svg"></button>
+                        <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_romantic.svg"></button>
+                        <button class="btn-floating btn-large waves-effect waves-light yellow accent-2" id=""><img class="emo" src="assets/images/emo_sunglasses_smiley.svg"></button>
+                        
+                    </div>
                     <br>
                     <br>
 
-                <div class="col s2 m2 l2 xl2">
-                    <a class="waves-effect waves-light btn green" id="moodSubmit">Submit</a>
-                </div>
+
             </div>
         </div>
     </div>
 
-   <!-- <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-            </div>
-        </div>
 
-        <div class="parallax"><img src="assets/images/background4.png" alt="Unsplashed background img 6"></div>
-
-    </div>-->
-
-    <div class="container" id="body">
+    <div class="container">
             <div class="container" id="playlistContainer">
                 <div class="row">
                     <div class="col s4 m4 l4 xl4"  id="body" >
@@ -167,34 +154,12 @@
 
             <br>
 
-            <!-- Audio Player Block -->
-           <!--  <div class="container" id="audioContainer">
-                <div class="row center-align">
-                    <div class="col s12 m12 l12 xl12 audioTools">
-                        <i class="material-icons" style="font-size: 60px" id="skipPrevInput">skip_previous</i>
-                        <i class="material-icons" style="font-size: 60px" id="playInput">play_arrow</i>
-                        <i class="material-icons" style="font-size: 60px" id="pauseInput">pause</i>
-                        <i class="material-icons" style="font-size: 60px" id="stopInput">stop</i>
-                        <i class="material-icons" style="font-size: 60px" id="skipNextInput">skip_next</i>
-                    </div>
-                </div>
-            </div> -->
-
                 </div>
                 </div>
     </div>
+</div>
 
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container">
-            </div>
-        </div>
-
-        <div class="parallax"><img src="assets/images/background2.png" alt="Unsplashed background img 1"></div>
-
-    </div>
-
-    <footer class="page-footer purple">
+    <footer class="page-footer">
         <div class="container center-align">
             <a href="https://github.com/ThompsonJonM/project-one" target="_blank" class="brand-logo">2017 Moodsic</a>
         </div>

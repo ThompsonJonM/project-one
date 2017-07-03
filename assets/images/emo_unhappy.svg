@@ -1,1 +1,16 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><style>.cls-1{fill:#fff;}</style></defs><title>Artboard 1 copy 5</title><path class="cls-1" d="M50,11.56A38.44,38.44,0,1,0,88.44,50,38.44,38.44,0,0,0,50,11.56Zm0,73.67A35.23,35.23,0,1,1,85.23,50,35.27,35.27,0,0,1,50,85.23Z"/><circle class="cls-1" cx="35.27" cy="43.07" r="6.41"/><circle class="cls-1" cx="64.73" cy="43.07" r="6.41"/><path class="cls-1" d="M50,60c-5.82,0-10.36,3.92-12.6,8.32-.6,1.18.2,2.45,1.09,1.72,7.42-6.15,15.66-6.11,23,0,.89.73,1.69-.54,1.09-1.72C60.36,63.9,55.81,60,50,60"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#231F20;}
+</style>
+<title>Artboard 1 copy 5</title>
+<path class="st0" d="M50,11.6c-21.2,0-38.4,17.2-38.4,38.4S28.8,88.4,50,88.4S88.4,71.2,88.4,50S71.2,11.6,50,11.6
+	C50,11.6,50,11.6,50,11.6z M50,85.2c-19.5,0-35.2-15.8-35.2-35.2c0-19.5,15.8-35.2,35.2-35.2c19.5,0,35.2,15.8,35.2,35.2
+	C85.2,69.4,69.4,85.2,50,85.2z"/>
+<circle class="st0" cx="35.3" cy="43.1" r="6.4"/>
+<circle class="st0" cx="64.7" cy="43.1" r="6.4"/>
+<path class="st0" d="M50,60c-5.8,0-10.4,3.9-12.6,8.3c-0.6,1.2,0.2,2.4,1.1,1.7c7.4-6.2,15.7-6.1,23,0c0.9,0.7,1.7-0.5,1.1-1.7
+	C60.4,63.9,55.8,60,50,60"/>
+</svg>

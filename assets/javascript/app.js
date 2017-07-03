@@ -27,7 +27,7 @@ function getWeather(){
 function weatherBackgroundChange() {
       switch (weatherIcon) {
         case "clear-day":
-          document.getElementById("body").style.backgroundImage = 'url("https://catfinearts.com/weather_images/AdobeStock_159516749_Preview.jpeg")';
+          document.getElementsById("body").style.backgroundImage = 'url("https://catfinearts.com/weather_images/AdobeStock_159516749_Preview.jpeg")';
           break;
         case "clear-night":
           document.getElementById("body").style.backgroundImage = 'url("https://tcklusman.files.wordpress.com/2014/05/tumblr_static_dark-starry-night-sky-226736.jpg")';
@@ -89,6 +89,7 @@ DZ.init({
 });
 $("#dezSubmit").on("click", function(){
   console.log("hi there");
+  getWeather();
     DZ.login(function(response) {
     if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
@@ -104,7 +105,7 @@ $("#badMoodButton").on("click", function(){
         var badMoodPlaylist = badMoodArray[Math.floor(Math.random() * badMoodArray.length)];
       
         DZ.player.playPlaylist(badMoodPlaylist);
-        getWeather();
+        // getWeather();
         });
 $("#boredButton").on("click", function(){
         var boredPlaylist = boredArray[Math.floor(Math.random() * boredArray.length)];

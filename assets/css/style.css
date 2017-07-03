@@ -14,10 +14,26 @@ p {
 }
 
 body {
-	background-color: #e0f2f1;
+	background-color: #212121;
+  color: white;
 }
 
+.collapsible-header {
+  background-color: #212121;
+  
+ }
+
+#body{
+  background-image: url"(../images/background2.png)";
+}
+
+ .collapsible {
+  border: none;
+
+ }
+
 footer.page-footer {
+  background-color: #424242;
   margin: 0;
 }
 
@@ -64,7 +80,12 @@ footer.page-footer {
 .button-collapse {
   color: white;
 }
+.parrallax {
+  background-image:url(.../images/background2.png);
+  background-repeat: none;
 
+
+}
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -74,6 +95,8 @@ footer.page-footer {
 
 .parallax-container .section {
   width: 100%;
+  background-image:url(.../images/background2.png);
+  background-repeat: none;
   }
 
 .icon-block {
@@ -96,6 +119,7 @@ footer.page-footer {
 .btn-floating.btn-large {
   width: 90px;
   height: 90px;
+  margin-right: 5px;
 }
 
 .btn-floating.btn-large.halfway-fab {
