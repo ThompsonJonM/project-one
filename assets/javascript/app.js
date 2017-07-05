@@ -36,33 +36,35 @@ function weatherBackgroundChange() {
       switch (weatherIcon) {
         case "clear-day":
           document.getElementsById("body").style.backgroundImage = 'url("https://catfinearts.com/weather_images/AdobeStock_159516749_Preview.jpeg")';
+          $(".describeWeather").text("It's a clear day");
           break;
         case "clear-night":
           document.getElementById("body").style.backgroundImage = 'url("https://tcklusman.files.wordpress.com/2014/05/tumblr_static_dark-starry-night-sky-226736.jpg")';
-           
+          $(".describeWeather").text("It's a clear night"); 
           break;
         case "rain":
           document.getElementById("body").style.backgroundImage = 'url("http://wearechange.org/wp-content/uploads/2015/03/1_See_It.jpg")';
-        
+          $(".describeWeather").text("It's raining");
           break;
         case "cloudy":
           document.getElementById("body").style.backgroundImage = 'url("http://www.tripwire.com/state-of-security/wp-content/uploads/cache//shutterstock_106367810/4261234929.jpg")';
-          
+          $(".describeWeather").text("It's cloudy");
           break;
         case "partly-cloudy-day":
           document.getElementById("body").style.backgroundImage = 'url("http://www.sturdyforcommonthings.com/wp-content/uploads/2013/03/wind_blowing.jpg")';
-          
+          $(".describeWeather").text("It's partly cloudy");
           break;
         case "partly-cloudy-night":
           document.getElementById("body").style.backgroundImage = 'url("http://scienceblogs.com/startswithabang/files/2013/04/night-sky-stars.jpeg")';
-           
+          $(".describeWeather").text("It's a partly cloudy night"); 
           break;
         case "snow":
           document.getElementById("body").style.backgroundImage = 'url("http://www.vancitybuzz.com/wp-content/uploads/2015/12/shutterstock_315123593-984x500.jpg")';
-        
+          $(".describeWeather").text("It's snowing");
           break;
         case "wind":
           document.getElementById("body").style.backgroundImage = 'url("http://www.phantomacademy.com/wp-content/uploads/2016/07/windy-drone.jpg")';
+          $(".describeWeather").text("It's windy");
         default:
           break;
       }
