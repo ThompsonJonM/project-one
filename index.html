@@ -5,91 +5,82 @@
     <title>Moodsic - Music for Your Barometric Pressure</title>
     <!-- Deezer script -->
     <!-- <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script> -->
-
     <!-- Beginnings of SEO -->
     <meta charset="utf-8">
     <!--meta name=”description” content=”155 characters of message matching text with a call to action goes here”-->
     <meta name=”description” content="NWCoding Bootcamp Project One: Moodsic, music for your barometric pressure">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Sara Heymann,Cory Miljour, Helen Smith, Jonathan Thompson">
-    
     <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-102058703-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-102058703-1', 'auto');
+    ga('send', 'pageview');
     </script>
-
     <!-- Reset -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-
     <!-- Compiled and Minified Materialize CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
-
     <!-- Materialize Local CSS -->
     <link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
-
     <!-- Primary Local Styling -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
     <!-- Favicon  -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-
     <!-- Google Fonts CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <!-- jQuery CDN -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script> -->
-    
     <!-- Mobile Viewport for Queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Google Tag Manager -->
     <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'project-one');
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'project-one');
     </script>
-
 </head>
 
 <body>
-
     <!-- Google Tag Manager (noscript) -->
     <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=project-one" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-
     <div id="index-banner">
-        <div class="section no-pad-bot  grey darken-2">
+        <div class="section no-pad-bot">
             <div class="container">
                 <br>
-                <br>
                 <div class="row">
-                    <div class="col s6 offset-s6">
+                    <div class="col s6">
+                        <br>
+                        <img class="responsive-img" src="assets/images/logo_crest.png" alt="logo for moodsic">
+                        <h5 class="header col s12 bolder">for placement only</h5>
+                        <br>
+                    </div>
+                    <div class="col s6">
                         <h1 class="brand-logo">Moodsic</h1>
                         <h5 class="header col s12 bolder">Play Lists for Your Barametric Pressure</h5>
                         <br>
@@ -106,7 +97,7 @@
         <div class="section">
             <div class="row center">
                 <div id="dz-root"></div>
-                <h4>You're in <span class="location"></span> </h4>
+                <h4>You&rsquo;re in <span class="location"></span> </h4>
                 <h4 class="describeWeather"></h4>
             </div>
             <div class="row center">
@@ -115,7 +106,7 @@
                         <div class="collapsible-header">
                             <h5>What is Moodsic</h5></div>
                         <div class="collapsible-body">
-                            <p>Studies show that both music and weather have an overwhelming effect on your mood. With this said, Moodsic puts the control back into your hands by allowing you to choose your desired mood and selecting curated playlists to get you there.</p> 
+                            <p>Studies show that both music and weather have an overwhelming effect on your mood. With this said, Moodsic puts the control back into your hands by allowing you to choose your desired mood and selecting curated playlists to get you there.</p>
                             <br>
                             <p>Our website is AA accessible so we all have the option to control our mood.
                             </p>
@@ -160,40 +151,32 @@
         </div>
         <div class="parallax" id="body"></div>
     </div>
-
     <footer class="page-footer">
-        <div class="container center-align">
-            <a href="https://github.com/ThompsonJonM/project-one" target="_blank" class="brand-logo">2017 Moodsic</a>
+        <div class="container center-align no-pad-bot">
+            <img class="responsive-img" src="assets/images/notation.png" alt="mustical notation spelling out authors names">
+            <a href="https://github.com/ThompsonJonM/project-one" target="_blank" class="brand-logo"><h5>2017 Moodsic</h5></a>
         </div>
     </footer>
-
     <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-
     <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyDoD78xVttjan9o94XQqqIKvlygqQeeBSY",
-            authDomain: "moodsic-29d77.firebaseapp.com",
-            databaseURL: "https://moodsic-29d77.firebaseio.com",
-            projectId: "moodsic-29d77",
-            storageBucket: "moodsic-29d77.appspot.com",
-            messagingSenderId: "563839980103"
-        };
-        firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDoD78xVttjan9o94XQqqIKvlygqQeeBSY",
+        authDomain: "moodsic-29d77.firebaseapp.com",
+        databaseURL: "https://moodsic-29d77.firebaseio.com",
+        projectId: "moodsic-29d77",
+        storageBucket: "moodsic-29d77.appspot.com",
+        messagingSenderId: "563839980103"
+    };
+    firebase.initializeApp(config);
     </script>
-
     <!-- Deezer script -->
     <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-
 </body>
-
 <!--  Materialize Scripts-->
 <script src="materialize/js/materialize.js"></script>
-
 <script src="materialize/js/init.js"></script>
 
 </html>
