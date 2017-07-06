@@ -1,4 +1,6 @@
 // JS goes here
+$(document).ready(function(){
+  $("#mainBody").toggle();
 
 var THE_KEY;  
 var coordinates;
@@ -100,6 +102,7 @@ DZ.init({
 $("#dezSubmit").on("click", function(){
   console.log("hi there");
   getWeather();
+  $("#mainBody").toggle();
     DZ.login(function(response) {
     if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
@@ -146,5 +149,5 @@ $("#happyButton").on("click", function(){
       
         DZ.player.playPlaylist(happyPlaylist);
         
-        });
+        });});
 
