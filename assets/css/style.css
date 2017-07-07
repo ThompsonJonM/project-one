@@ -31,6 +31,9 @@ footer.page-footer {
     margin-top: 20px;
 }
 
+h4 {
+   text-shadow: 2px 3px #455a64;
+}
 
 /*Individual IDs*/
 
@@ -121,6 +124,7 @@ footer.page-footer {
     min-height: 500px;
     padding-top: 50px;
 }
+
 
 
 /*
