@@ -37,7 +37,7 @@ function getWeather(){
 function weatherBackgroundChange() {
       switch (weatherIcon) {
         case "clear-day":
-          document.getElementsById("body").style.backgroundImage = 'url("https://catfinearts.com/weather_images/AdobeStock_159516749_Preview.jpeg")';
+          document.getElementById("body").style.backgroundImage = 'url("https://img02.deviantart.net/d2c2/i/2005/028/b/6/clear_day_by_juanchis.jpg")';
           $(".describeWeather").text("It's a clear day");
           break;
         case "clear-night":
