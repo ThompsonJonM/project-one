@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-nav ul a,
-nav .brand-logo {
-    color: #eceff1;
-}
-
 p {
     line-height: 2rem;
 }
@@ -21,6 +16,7 @@ body {
 ul p {
     text-align: left;
 }
+
 .instruct{
   color: #ffff00;
   font-size: 18px;
@@ -37,52 +33,14 @@ h4 {
 
 /*Individual IDs*/
 
-#body {
-    background-image: url"(../images/background2.png)";
-}
-
 #index-banner {
     background-color: #455a64;
 }
 
-/*#logo-container {
-  color: white;
+#mainBody {
+    background-repeat: no-repeat;
+    background-position: center;
 }
-*/
-
-
-/*
-#backgroundSplash {
-  background-image: url(test successful);
-  background-position: center;
-  background-size: 85% 150%;
-  background-repeat: no-repeat;
-}
-*/
-
-
-/*#dezContainer, #moodContainer, #locContainer {
-  background-color: #e0f2f1;
-  min-height: 250px;
-}
-
-#playlistImgOne, #playlistImgTwo, #playlistImgThree {
-  box-shadow: 0 0 2px 2px;
-}
-
-#playlistImgOne:hover, #playlistImgTwo:hover, #playlistImgThree:hover {
-  box-shadow: 0 0 5px 5px;
-}
-*/
-
-
-/*#audioContainer {
-  background-color: #FFF9C4;
-  height: 50px;
-  border: 2px solid #9C27B0;
-}
-*/
-
 
 /*Classes*/
 
@@ -94,22 +52,12 @@ h4 {
     color: #eceff1;
 }
 
-.parrallax {
-    background-image: url(.../images/background2.png);
-    background-repeat: none;
-}
-
-.parallax-container {
+.pageContainer {
     min-height: 680px;
     line-height: 0;
     height: auto;
     color: rgba(255, 255, 255, .9);
-}
 
-.parallax-container .section {
-    width: 100%;
-    background-image: url(.../images/background2.png);
-    background-repeat: none;
 }
 
 .icon-block {
@@ -124,14 +72,6 @@ h4 {
     min-height: 500px;
     padding-top: 50px;
 }
-
-
-
-/*
-.audioTools {
-  margin: 12.5px 0 0 0;
-}
-*/
 
 .btn-floating.btn-large {
     width: 90px;
@@ -158,18 +98,47 @@ h4 {
 
 /*Media Queries*/
 
-@media only screen and (max-width: 992px) {
-    .parallax-container .section {
-        position: absolute;
-        top: 40%;
+@media only screen and (max-width: 2600px) {
+    #index-banner .section {
+        top: 0;
     }
+
+    #dzplayer {
+      width: 82.5% !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
     #index-banner .section {
         top: 10%;
+    }
+
+    #dzplayer {
+      width: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #index-banner .section {
+        top: 0;
+    }
+
+    #dzplayer {
+      width: 100% !important;
     }
 }
 
 @media only screen and (max-width: 600px) {
     #index-banner .section {
         top: 0;
+    }
+
+    #dzplayer {
+      width: 100% !important;
+    }
+
+    #logoCrest {
+      width: 100% !important;
+      height: 400px !important;
     }
 }

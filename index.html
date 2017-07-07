@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col s12 m6 l6 xl6">
                         <br>
-                        <img class="responsive-img" src="assets/images/logo_crest.png" alt="logo for moodsic">
+                        <img class="responsive-img" id="logoCrest" src="assets/images/logo_crest.png" alt="logo for moodsic">
                         <br>
                     </div>
                     <div class="col s12 m6 l6 xl6">
@@ -109,24 +109,21 @@
             </div>
         </div>
     </div>
-<div id="mainBody">
 
-    <!-- background for weather info -->
-    <div class="parallax-container valign-wrapper">
-        <div class="section no-pad-bot">
-            <div class="container" id="locContainer">
-                <div class="section">
-                    <div class="row center">
-                        <div id="dz-root"></div>
+    <div id="mainBody">
+        <div class="container pageContainer">
+            <div class="row">
+                <div class="col s12 m12 l12 xl12">
+                    <div class="container" id="locContainer">
+                        <div class="row center">
+                            <div class="col s12 m12 l12 xl12" id="dz-root"></div>
                             <h4>You&rsquo;re in <span class="location"></span> </h4>
                             <h4 class="describeWeather"></h4>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="container" id="moodContainer">
-                    <div class="section">
-                         <div class="row center">
+
+                    <div class="container" id="moodContainer">
+                        <div class="row center">
                             <div class="col s12 m12 l12 xl12">
                                 <h4>What mood would you like to be in?</h4>
                                 <bk/>
@@ -139,24 +136,22 @@
                             </div>
                             <br>
                             <br>
+                            <br>
                         </div>
                     </div>
-                </div>
-            </div> 
-                <div class="container" id="playlistContainer">
-                    <div class="row center">
-                        <br>
-                        <br>
-                        <div class="col s12 m12 l12 xl11 offset-xl1" id="deezerWidget"></div>
-                        <br>
+
+                    <div class="container" id="playlistContainer">
+                        <div class="row center">
+                            <div class="col s12 m12 l12 xl12 push-xl1" id="deezerWidget"></div>
+                            <br>
+                        </div>
                     </div>
+                    <br>
+                    <br>
                 </div>
-                <br>
-                <br>
+            </div>
         </div>
-        <div class="parallax" id="body"></div>
     </div>
-</div>
 
     <footer class="page-footer">
         <div class="container center-align no-pad-bot">
