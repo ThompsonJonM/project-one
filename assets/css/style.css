@@ -99,9 +99,6 @@ h4 {
 /*Media Queries*/
 
 @media only screen and (max-width: 2600px) {
-    #index-banner .section {
-        top: 0;
-    }
 
     #dzplayer {
       width: 82.5% !important;
@@ -109,19 +106,17 @@ h4 {
 }
 
 @media only screen and (max-width: 1200px) {
-    #index-banner .section {
-        top: 10%;
-    }
 
     #dzplayer {
       width: 100% !important;
     }
+
+    #moodContainer {
+        width: 100% !important;
+    }
 }
 
 @media only screen and (max-width: 992px) {
-    #index-banner .section {
-        top: 0;
-    }
 
     #dzplayer {
       width: 100% !important;
@@ -129,9 +124,6 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-    #index-banner .section {
-        top: 0;
-    }
 
     #dzplayer {
       width: 100% !important;
@@ -140,5 +132,41 @@ h4 {
     #logoCrest {
       width: 100% !important;
       height: 400px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #dzplayer {
+      width: 100% !important;
+    }
+
+    #logoCrest {
+      width: 100% !important;
+      height: 400px !important;
+    }
+
+    #moodContainer {
+        width: 75% !important;
+    }
+
+    #dezSubmit {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    #dzplayer {
+      width: 100% !important;
+    }
+
+    #logoCrest {
+      width: 100% !important;
+      height: 300px !important;
+    }
+
+    #dezSubmit {
+        width: 100%;
     }
 }
