@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
   <title>Moodsic - Music for Your Barometric Pressure</title>
   <script src="https://e-cdns-files.dzcdn.net/js/min/dz.js"></script>
@@ -52,32 +52,9 @@
     <!-- Mobile Viewport for Queries -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'project-one');
-    </script>
-
 </head>
 
 <body>
-
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=project-one" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
 
     <div id="index-banner" role="header">
         <div class="section no-pad-bot">
@@ -100,8 +77,8 @@
                         <a role="link" class="btn-large waves-effect waves-light btn green" id="dezSubmit" >
                             <span tabindex="0"
                             role="link"
-                            onclick="goToLink(event, 'http://www.w3.org/')"
-                            onkeydown="goToLink(event, 'http://www.w3.org/')">
+                            onclick="goToLink(event)"
+                            onkeydown="goToLink(event)">
                             Login to Deezer</span></a>
                         <br>
                         <br>
@@ -128,12 +105,12 @@
                             <div class="col s12 m12 l12 xl12">
                                 <h4>What mood would you like to be in?</h4>
                                 <bk/>
-                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="badMoodButton" data-position="top" data-tooltip="Angry Mood"><img class="responsive-img" id="emo" src="assets/images/emo_devil.svg" alt="change my mood to angry"></button>
-                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="sadButton" data-position="top" data-tooltip="Sad Mood"><img class="responsive-img" id="emo" src="assets/images/emo_unhappy.svg" alt="change my mood to sad"></button>
-                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="boredButton" data-position="top" data-tooltip="Bored Mood"><img class="responsive-img" id="emo" src="assets/images/emo_blank.svg" alt="change my mood to bored"></button>
-                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="sleepyButton" data-position="top" data-tooltip="Sleepy Mood"><img class="responsive-img" id="emo" src="assets/images/emo_sleep.svg" alt="change my mood to sleepy"></button>
-                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="romanticButton" data-position="top" data-tooltip="Romantic Mood"><img class="responsive-img" id="emo" src="assets/images/emo_romantic.svg" alt="change my mood to romantic"></button>
-                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="happyButton" data-position="top" data-tooltip="Happy Mood"><img class="responsive-img" id="emo" src="assets/images/emo_sunglasses_smiley.svg" alt="change my mood to happy"></button>
+                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="badMoodButton" data-position="top" data-tooltip="Angry Mood"><img class="responsive-img" src="assets/images/emo_devil.svg" alt="change my mood to angry"></button>
+                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="sadButton" data-position="top" data-tooltip="Sad Mood"><img class="responsive-img" src="assets/images/emo_unhappy.svg" alt="change my mood to sad"></button>
+                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="boredButton" data-position="top" data-tooltip="Bored Mood"><img class="responsive-img" src="assets/images/emo_blank.svg" alt="change my mood to bored"></button>
+                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="sleepyButton" data-position="top" data-tooltip="Sleepy Mood"><img class="responsive-img" src="assets/images/emo_sleep.svg" alt="change my mood to sleepy"></button>
+                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="romanticButton" data-position="top" data-tooltip="Romantic Mood"><img class="responsive-img" src="assets/images/emo_romantic.svg" alt="change my mood to romantic"></button>
+                                <button class="btn-floating btn-large waves-effect waves-light yellow accent-2 btn tooltipped" id="happyButton" data-position="top" data-tooltip="Happy Mood"><img class="responsive-img" src="assets/images/emo_sunglasses_smiley.svg" alt="change my mood to happy"></button>
                             </div>
                             <br>
                             <br>
