@@ -1,27 +1,31 @@
 #MOODSIC
+<img width="1280" alt="screen shot 2017-07-08 at 8 12 22 pm" src="https://user-images.githubusercontent.com/26096434/27990355-d591a8ac-6419-11e7-889a-a58a4c8f5b9a.png">
 
 This README will document the following:
 
-* What the application is for
+* What the application is for:
 
 	* Moodsic is a mood-changing web application which gathers weather, location, and mood data to create playlists which seek to change your mood.
 
-* Running Moodsic in your browser
+* Running Moodsic in your browser:
 
-	* Navigate to the moodsic website and click on the "Login to Deezer" link. This will open a separate page which allows you to either create a Deezer ID or log in to an existing account. Once logged in, simply click on the provided emoticons in order to begin changing your mood.
+	* Navigate to the Moodsic website and click on the "Login to Deezer" link. This will open a separate page which allows you to either create a Deezer ID or log in to an existing account. You will need a Deezer account in order to use Moodsic. Once logged in, simply click on the provided emoticon buttons in order to begin changing your mood. This is an example of a clear day, and an angry playlist:
+<img width="1280" alt="screen shot 2017-07-08 at 8 14 13 pm" src="https://user-images.githubusercontent.com/26096434/27990374-9c3657a0-641a-11e7-8f6d-b5b644197ae4.png">
 
-* Setting up a Deezer Account
+* Technology contained within the application:
 
-	* Navigate to Deezer using the above method. When prompted, create a new registry for a Deezer account (you will be required to enter either a valid email, Google+, or Facebook). Once created, you will have full access to the playlists found within the body of the application.
+	* We used materialize to design the site, the geoip-db.com API to find your geographic location, the Dark Sky API to figure out the current weather to set the background image, and then the Deezer API to call playlists to coincide with the mood you want to be in. We also use the google analytics API to track the use of our website.  Here are our analytics as of Saturday, July 8, 2017:
 
-* Technology contained within the application
+<img width="553" alt="screen shot 2017-07-08 at 8 01 08 pm" src="https://user-images.githubusercontent.com/26096434/27990322-46aa6a44-6418-11e7-9d3c-5e2af7b58996.png">
 
-	* Moodsic uses a combination of APIs which gather data from the following: Weather Underground, Deezer, and your geographic location. This data is then used to assist in providing you as much information as possible when deciding on how you want to change your mood.
+* Accessibility:
 
-* Accessibility
+	* Moodsic has been built with visual accessibility in mind. Our web application is fully compliant with CUD accessibility standards. And partially compliant with AA standards. You can download our most current accessibility report here:
+[accessability.pdf](https://github.com/ThompsonJonM/project-one/files/1133482/accessability.pdf)
 
-	* Moodsic has been built with visual accessibility in mind. Our web application is 60% compliant with accessibility standards set by the W3C.
-
-* Engineers
+* Engineers:
 
 	* Sara Heymann, Helen Smith, Cory Miljour, and Jonathan Thompson.
+	
+* Thank you for checking out our app!
+	
